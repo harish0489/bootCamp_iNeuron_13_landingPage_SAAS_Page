@@ -1,0 +1,366 @@
+/* Import Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Cleanup CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.list-item, .helpitems li {
+    list-style-type: none;
+}
+
+
+.footer-icons {
+    margin: auto;
+    height: 4vh;
+    width: 4vh;
+    vertical-align: middle;
+}
+
+
+
+nav,
+.hero {
+    background-color: #7030cb;
+}
+
+button {
+    all: unset;
+}
+
+
+.left h1,
+.left p {
+    color: #FFFFFF;
+}
+
+
+.one {
+    color: #f9bf98;
+}
+
+.two {
+    color: #cae9b1;
+}
+
+.three {
+    color: #3f9cf1;
+}
+
+
+
+@media screen and (min-width:321px) and (max-width:986px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-logo {
+        height: 5vh;
+        width: 10vw;
+    }
+
+    nav .list-items {
+        display: flex;
+        flex: 2;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .list-item {
+        list-style-type: none;
+        padding: 0vh 5vh;
+        font-family: "Roboto", sans-serif;
+        color: #FFFFFF;
+    }
+
+    .list-item:first-child {
+        color: #1db3ec;
+        text-decoration: underline;
+        text-decoration-color: #b75cd9;
+        text-underline-offset: 4px;
+    }
+
+    .btn-register {
+        background-color: #1db3ec;
+        color: white;
+        padding: 2vh 5vh;
+    }
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .helpitems li p{
+        margin: 10px 0;
+    }
+
+    .hero .left{
+        margin: 50px;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .left h1{
+        margin: 10px 0;
+    }
+    .hero .right {
+        padding-left: 25vh;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content .help{
+        width : 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+    }
+
+    .saas img{
+        height : 50vh;
+    }
+
+  
+
+    .footerText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .footerCards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }
+
+    .card {
+        height: 30vh;
+        width: 20vw;
+        margin: 1vh;
+        background-color: #FFF;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.55);
+
+    }
+
+
+}
+
+@media screen and (min-width:987px) {
+
+
+    .content,
+    .footer {
+        background-color: #fdfeff;
+    }
+
+
+    .footer {
+        margin-top: 10vh;
+    }
+
+    /* Styles for Navbar */
+    nav,
+    .jumbo,
+    .hero,
+    .customer,
+    .footer {
+        padding: 2vh 10vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: 5vh;
+    }
+
+    .heroImage {
+        margin: auto;
+    }
+
+    nav .list-items {
+        display: flex;
+        flex: 2;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .list-item {
+        list-style-type: none;
+        padding: 0vh 5vh;
+        font-family: "Roboto", sans-serif;
+        color: #FFFFFF;
+    }
+
+    .list-item:first-child {
+        color: #1db3ec;
+        text-decoration: underline;
+        text-decoration-color: #b75cd9;
+        text-underline-offset: 4px;
+    }
+
+    .btn-register {
+        background-color: #1db3ec;
+        color: white;
+        padding: 2vh 5vh;
+    }
+
+
+    .hero,
+    .content {
+        display: flex;
+        height: 60vh;
+    }
+
+    .left,
+    .right,
+    .saas,
+    .help {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .hero .right {
+        padding-left: 25vh;
+    }
+
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0vh 5vh;
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20vh;
+
+    }
+
+    .left h1 {
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 5vh;
+    }
+
+    .help h1 {
+        margin-top: 10vh;
+        font-size: 26px;
+        font-weight: 500;
+        text-align: left;
+        width: 25vw;
+    }
+
+    .left p {
+        color: #ede6f8;
+        line-height: 150%;
+
+    }
+
+    .footerText {
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .footerCards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        height: 28vh;
+        width: 12vw;
+        margin: 1vh;
+        background-color: #FFF;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.55);
+
+    }
+
+    .iconCircle {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        border-radius: 50%;
+        margin: auto;
+        text-align: center;
+
+    }
+
+       .card p {
+        margin: 0.25vh 0vh;
+    }
+
+    .card p:last-child {
+        margin-bottom: 3vh;
+    }
+
+    .content .saas {
+        padding-left: 15vh;
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .helpitems li {
+        list-style-type: none;
+        padding: 1vh;
+        margin: 10px 0px;
+        text-align: left;
+        width: 25vw;
+    }
+
+    .helpitems li p:first-child {
+        font-size: 18px;
+        margin: 2vh 0vh;
+    }
+
+    .helpitems li p:not(:first-child) {
+        font-size: 12px;
+        color: 4e4e4e;
+        line-height: 150%;
+    }
+
+    .wave {
+        background-image: url("./assets/footer-wave.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
